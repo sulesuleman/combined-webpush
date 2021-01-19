@@ -1,0 +1,82 @@
+{
+  "definitions": {
+    "website_filter": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "enum":  ["website_key"]},
+        "value": {"type": "string"},
+        "inner_operator": {"type": "string", "enum" : ["is", "is_not"]},
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["name", "value","inner_operator", "outer_operator"]
+    },
+    "platform_filter": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "enum":  ["platform"]},
+        "value": {"type": "string"},
+        "inner_operator": {"type": "string", "enum" : ["is", "is_not"]},
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["name", "value","inner_operator", "outer_operator"]
+    },
+    "browser_filter": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "enum":  ["browser"]},
+        "value": {"type": "string"},
+        "inner_operator": {"type": "string", "enum" : ["is", "is_not"]},
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["name", "value","inner_operator", "outer_operator"]
+    },
+    "country_code_filter": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "enum":  ["country_code"]},
+        "value": {"type": "string"},
+        "inner_operator": {"type": "string", "enum" : ["is", "is_not"]},
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["name", "value","inner_operator", "outer_operator"]
+    },
+    "city_filter": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "enum":  ["city"]},
+        "value": {"type": "string"},
+        "inner_operator": {"type": "string", "enum" : ["is", "is_not"]},
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["name", "value","inner_operator", "outer_operator"]
+    },
+    "segment_group": {
+      "type": "object",
+      "properties": {
+        "filters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "anyOf": [
+              { "$ref": "#/definitions/website_filter" },
+              { "$ref": "#/definitions/platform_filter" },
+              { "$ref": "#/definitions/browser_filter" },
+              { "$ref": "#/definitions/country_code_filter" },
+              { "$ref": "#/definitions/city_filter" }
+            ]
+          }
+        },
+        "outer_operator": {"type": "string", "enum":  ["and", "or"]}
+      },
+      "required": ["filters", "outer_operator"]
+    }
+  },
+  "title" : "Array of Filters",
+  "type" : "array",
+  "minItems": 1,
+  "items" : {
+    "anyOf": [
+      { "$ref": "#/definitions/segment_group" }
+    ]
+  }
+}
