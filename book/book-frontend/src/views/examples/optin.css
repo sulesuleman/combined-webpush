@@ -1,0 +1,92 @@
+.background{
+    background-image: url('../../assets/img/4703133.png');
+}
+.background1{
+    background-image: url('../../assets/img/rectangle optin-01.png');
+   
+}
+.expandable {
+    background: #fff;
+    overflow: hidden;
+    color: #000;   
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+  
+    /* transition: all .5s ease-in-out; */
+
+   }
+   .btn{
+    position: absolute;
+    top: 80%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  border: 1px solid lightgrey;
+    text-align: center;
+   }
+   .fa{
+    position: absolute;
+    top: 28%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    color: black;
+    font-size: 14px;
+  
+   }
+   .btnallow{
+    position: absolute;
+    top: 80%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  border: 1px solid lightgrey;
+    text-align: center;
+   }
+   .button{
+   box-sizing: border-box;
+    position: relative;
+
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    background-color: lightgray;
+   
+    border-radius: 4px;
+}
+.button1{
+    box-sizing: border-box;
+     position: relative;
+ 
+     user-select: none;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     -webkit-tap-highlight-color: transparent;
+     display: inline-block;
+     white-space: nowrap;
+     text-decoration: none;
+     vertical-align: baseline;
+     text-align: center;
+     margin: 0;
+     background-color: orange;
+    color:white;
+     border-radius: 4px;
+ }

@@ -1,0 +1,109 @@
+.dropfilter{
+    color:'black';
+    background:'white';
+    font-size:14;
+    padding-left:5;
+    padding-right:5;
+    border:"1px solid black";
+    padding:3;width:'100%'
+
+}
+.text-mutedcard{
+    color:#8898aa;
+    font-weight: bold;
+}
+.steps-content {
+
+    border-radius: 2px;
+padding: 18px;
+    min-height: 200px;
+   background-color: #f3f2ed;
+
+  }
+ select{
+     padding: 5px;
+ } 
+ .card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ }
+  .card:hover{
+    box-shadow: 0 12px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+  
+  }
+  .hov {
+    display: block;
+    width: 90px;
+    height: 40px;
+    padding: 1px;
+    border-bottom: 1px solid rgb(148, 148, 156);   
+    text-align: center; 
+   
+  }
+  
+  .hov1 {
+    display: block;
+    width: 90px;
+    height: 10px;
+    padding: 1px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    text-align: center; 
+
+  }
+  .hov2 {
+    display: block;
+    width: 90px;
+    height: 10px;
+    padding: 1px;
+    margin: 0;
+    position: absolute;
+    background-color: lightgray;
+    top: 60%;
+    text-align: center; 
+
+  }
+.pt-md-9{
+    padding-top: 2rem !important; } 
+    .pt-md-8{
+        padding-top: 4rem !important; } 
+   .cardcampaign{
+       text-align: center;
+       padding: 70px 0;
+   }
+   .cardschulde{
+    text-align: center;
+    padding: 10px 0;
+}   
+   .cardfilter{
+ 
+    padding: 5px 0;
+}    
+    .dropfilter:hover {
+    /* color: #fff;
+    background-color: #3b5999;
+    border-color: #3b5999;
+border:0 } */
+
+color:'black';
+    background:'white';
+    font-size:14;
+    padding-left:5;
+    padding-right:5;
+    border:"1px solid black";
+    padding:3;width:'100%'}
+    @media (max-width: 992px){
+        .cardcampaign{
+            text-align: left;
+            padding: 0px 0;
+        } 
+        .mb-0{
+            
+            color:'white';
+            
+            font-size:10
+                        
+        }
+    }
