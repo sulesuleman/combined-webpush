@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const USER_API_BASE_URL = 'http://127.0.0.1:8000/';
+export const USER_API_BASE_URL = 'https://dev-api.pushleopard.com/';
 
 class axiosInstance {
 
